@@ -1,0 +1,25 @@
+@import '../../assets/scss/variables.scss';
+
+.banner{
+   height: 223px;
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover;
+   
+  
+   &__title{
+      color: white;
+      font-size: 48px;
+      font-weight: $font-medium;
+    
+   }
+   &__acceuil{
+      background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("../../assets/images/bannerAcceuil.png");
+   }
+   &__apropos{
+      background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("../../assets/images/bannerApropos.png");
+   }
+
+}

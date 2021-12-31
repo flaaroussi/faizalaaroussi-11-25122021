@@ -1,0 +1,26 @@
+@import '../../assets/scss/variables.scss';
+
+   .page-erreur{
+      text-align: center;
+      
+      &__404{
+         font-size: 288px;
+         font-weight: $font-bold;
+      }
+      &__msg{
+         font-size: 36px;
+         padding-bottom: 180px;
+      }  
+      &__lien{
+         font-size:18px;
+         color :$color1;
+         font-weight: $font-medium;
+         
+         &.active{
+            border-bottom:1px solid $color1;
+         }
+      }  
+      
+   }
+
+  

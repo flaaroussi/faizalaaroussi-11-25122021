@@ -1,8 +1,24 @@
-nav{
-   ul{
-      
-         display: flex;
-         flex-direction: row;
-   
-         } 
+
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/variables.scss';
+.navbar{
+      @include flex (row, space-between, center);
+      height: 68px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      &__log{
+            
+            width: 54px;
+      }
+      &__nav{
+            &__link{
+                  margin-left: 57px;
+                  font-size: 24px;
+                  color :$color1;
+                  &.active{
+                        border-bottom:1px solid $color1;
+                  }
+            }
+      }
+     
 }

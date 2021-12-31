@@ -1,0 +1,8 @@
+
+@import '../../assets/scss/variables.scss';
+.annonces{
+   background-color: $color2;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap :40px;
+}

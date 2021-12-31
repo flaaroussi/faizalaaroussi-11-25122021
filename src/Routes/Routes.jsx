@@ -5,8 +5,8 @@ import Erreur from "../Pages/Erreur";
 
 export default function Router(){
    return <Routes>        
-      <Route path="/" element={<Acceuil />}  exact/>
-      <Route path="/apropos" element={<Apropos />}  exact/>
-      <Route path="*" element={<Erreur />}  exact/>
+      <Route path="/" element={<Acceuil />}  exact="true"/>
+      <Route path="/apropos" element={<Apropos />}  />
+      <Route path="*" element={<Erreur />}  />
    </Routes>
 }

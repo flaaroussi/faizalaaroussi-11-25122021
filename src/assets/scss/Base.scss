@@ -1,9 +1,26 @@
+
 *{
    box-sizing: border-box;
    padding: 0;
    margin: 0;
    list-style: none;
    list-style-type: none;
-   line-height: 1.2rem;
 }
 
+body{
+   font-size: 0.75rem; /* 12px */
+   color: $color1;
+   width: 80%;
+   margin: auto;
+   font-family: $font-family-primary, DM+Sans, sans-serif;
+   font-weight: $font-regular;
+   @media screen and (max-width: 650px) {
+      body {
+        width: 90%;
+      }
+   }   
+}
+
+a{
+   text-decoration: none;
+}
