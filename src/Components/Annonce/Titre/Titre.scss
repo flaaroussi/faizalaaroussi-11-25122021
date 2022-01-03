@@ -1,0 +1,14 @@
+@import '../../../assets/scss/variables.scss';
+
+.annonce__titre{
+
+   h1{
+      font-size: 36px;
+      font-weight:$font-medium;
+   }
+   h3{
+      margin-top: 5px;
+      font-size: 18px;
+      font-weight:$font-medium;
+   }
+}

@@ -10,7 +10,7 @@ export default class Banner extends Component{
       return <section className={classcss}>
          {
             //pour ne pas afficher la balise <h1> vide si title est vide cas page apropos
-         title !="" && <h1 className="banner__title"> {title} </h1>
+         title !== "" && <h1 className="banner__title"> {title} </h1>
          }
       </section>
    }

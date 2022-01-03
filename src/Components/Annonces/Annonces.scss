@@ -1,8 +1,31 @@
-
 @import '../../assets/scss/variables.scss';
+
+//style section annonces
 .annonces{
-   background-color: $color2;
+   margin-top: 40px;
+   background-color: $backgroud2;
+   padding: 40px;
+   border-radius: 25px;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap :40px;
+}
+
+//style card
+.logement{
+   border-radius: 10px;
+      &__img{
+         object-fit: cover;
+         height: 100%;
+         width: 100%;
+         border-radius: 10px;
+      }   
+      &__titre{
+         position: relative;
+         font-size: 18px;
+         font-weight: $font-medium;
+         color:$color-white;
+         margin-left: 20px;
+         top: -40px;
+      }
 }

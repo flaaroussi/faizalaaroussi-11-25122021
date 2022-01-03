@@ -1,0 +1,9 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+.tags{
+  
+   @include flex ('row', 0, 'center');
+   margin-top: 20px;
+
+}

@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Api from '../../Api/Api.js'
+import AnnonceCard from "../Annonce/Card/index.jsx";
 import './Annonces.scss'
 
 
@@ -13,7 +14,7 @@ export default class Annonces extends Component{
       return <section className="annonces">
          {
          logementsData.map(({id, title,cover}) => {            
-           return  <article key={id}>{title}</article>
+           return  <AnnonceCard key={id} id={id} titre={title} cover={cover} />
          })
          }
    </section>
