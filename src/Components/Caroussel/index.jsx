@@ -16,6 +16,7 @@ export default class Caroussel extends Component{
    }
 
    prevSlide(){
+      
       let newCurrentIndex = this.state.currentIndexSelected
       if(newCurrentIndex === 0 ){ 
          newCurrentIndex = this.getTotalPictures()      

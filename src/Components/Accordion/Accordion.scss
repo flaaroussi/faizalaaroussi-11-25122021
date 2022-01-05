@@ -1,0 +1,41 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/variables.scss';
+
+.accordion{
+
+   &__header{
+      background-color:$color1;
+      border-radius: 10px;
+      @include flex (row, space-between, center);
+      height: 52px;      
+
+      &__titre{
+         font-size: 18px;            
+         color: $color-white;
+         
+         padding-left: 20px;
+         width: 100%;
+         font-weight: $font-medium;
+         
+      }
+      &__toggle{
+         width: 40px;
+         margin-right: 10px;
+      }
+   }
+
+   &__body{
+      background-color:$backgroud2;
+      padding: 30px 12px 30px 20px;
+      font-size: 18px;
+      min-height: 60px;
+      &.hide{
+         display: none;
+      }
+   }
+   &__liste li{
+      margin-bottom: 8px;
+      
+   }
+   
+}

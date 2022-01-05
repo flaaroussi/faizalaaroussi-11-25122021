@@ -1,0 +1,25 @@
+
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/variables.scss';
+
+.annonce__warpper{
+   @include flex ('row', 'space-between', 'center');
+   align-items: center;
+   margin-top: 20px;
+
+   .accordion{
+      margin-right: 60px;
+      width: 50%;
+      &__body{     
+         min-height: 360px  !important;
+      }
+   }
+   
+
+
+   .accordion:last-child{
+      margin-right: 0;
+   }
+  
+   
+}
