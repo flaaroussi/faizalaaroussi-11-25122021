@@ -12,15 +12,18 @@
       &__titre{
          font-size: 18px;            
          color: $color-white;
-         
          padding-left: 20px;
          width: 100%;
          font-weight: $font-medium;
+         @media screen and (max-width: 650px) {
+            font-size: 14px;
+         }   
          
       }
       &__toggle{
          width: 40px;
          margin-right: 10px;
+         cursor: pointer;
       }
    }
 

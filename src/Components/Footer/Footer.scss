@@ -9,7 +9,10 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
+      
+      @media screen and (max-width: 650px) {
+         height: 109px;
+      }  
    
    &__lien{
       margin-top: 40px;

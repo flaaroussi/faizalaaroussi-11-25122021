@@ -12,3 +12,9 @@ $font-family-primary :'Montserrat';
 $font-regular :400;
 $font-medium :500;
 $font-bold :700;
+
+
+/** Breakpoints Responsive design: tablette et desktop*/
+$breakpoints:(
+   smartphone:650px,
+);

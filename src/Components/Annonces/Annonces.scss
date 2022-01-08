@@ -1,5 +1,5 @@
 @import '../../assets/scss/variables.scss';
-
+@import '../../assets/scss/mixins.scss';
 //style section annonces
 .annonces{
    margin-top: 40px;
@@ -9,6 +9,11 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap :40px;
+   @include responsive(smartphone){
+      grid-template-columns: 1fr;
+      padding: 20px;
+   }
+      
 }
 
 //style card
@@ -26,6 +31,6 @@
          font-weight: $font-medium;
          color:$color-white;
          margin-left: 20px;
-         top: -40px;
+         top: -50px;
       }
 }

@@ -1,16 +1,24 @@
 
 @import '../../assets/scss/mixins.scss';
 @import '../../assets/scss/variables.scss';
+
 .navbar{
       @include flex (row, space-between, center);
       height: 68px;
       margin-bottom: 40px;
       margin-top: 40px;
-      &__log{
+      @include responsive(smartphone){
+           
+         }
             
+      &__log{
             width: 54px;
       }
       &__nav{
+            @include responsive(smartphone){
+                  display: flex;
+                  flex-wrap: wrap;
+               }
             &__link{
                   margin-left: 57px;
                   font-size: 24px;

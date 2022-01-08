@@ -2,18 +2,52 @@
 @import '../../assets/scss/mixins.scss';
 @import '../../assets/scss/variables.scss';
 
-.annonce__warpper{
-   @include flex ('row', 'space-between', 'center');
-   align-items: center;
-   margin-top: 20px;
+.annonce{
+   &__blocs{
+      @include flex (row, space-between, center);
+      @include responsive(smartphone){
+         flex-direction: column;    
+      }
 
-   .accordion{
-      margin-right: 60px;
-      width: 50%;
-      &__body{     
-         min-height: 360px  !important;
+      &__bloc{
+         .tags,
+         .rating{
+            margin-top: 20px;  
+            
+         }
+      }
+      &__bloc:last-child{
+         @include flex (column, right, right);
+         @include responsive(smartphone){
+            @include flex (row, space-between, center);
+            flex-direction: row-reverse;
+         }
+         
+         aside{
+            width: 100%;
+            text-align: right;
+         }
+         
       }
    }
+
+
+   &__warpper{
+      @include flex (row, space-between, 0);
+      margin-top: 30px;
+
+      @include responsive(smartphone){
+         @include flex (column, space-between, center);
+        
+      }
+
+      .accordion{
+         margin-right: 60px;
+         width: 50%;
+         &__body{     
+            min-height: 360px  !important;
+         }
+      }
    
 
 
@@ -22,4 +56,5 @@
    }
   
    
+}
 }

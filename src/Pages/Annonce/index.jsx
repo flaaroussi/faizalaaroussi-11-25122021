@@ -29,18 +29,22 @@ export default class Annonce extends Component{
 
       return <main className="main annonce">
          <Caroussel pictures={logementData.pictures}/>
-         <div className="annonce__warpper">
-            <AnnonceTitre titre={logementData.title} adresse={logementData.location} />
-            <Host name={logementData.host.name} picture={logementData.host.picture}/>
-         </div>
-         <div className="annonce__warpper">
-            <Tags tags={logementData.tags}/>
-            <Stars rating={logementData.rating}/>
-         </div>
-         <div className="annonce__warpper">
-            <Accordion content={logementData.description} titre="Déscription"/>
-            <Accordion content={logementData.equipments} titre="Équipements"/>            
-         </div>
+
+         <section className="annonce__blocs">
+            <div className="annonce__blocs__bloc">
+               <AnnonceTitre titre={logementData.title} adresse={logementData.location} />
+               <Tags tags={logementData.tags}/>
+            </div>
+            <div className="annonce__blocs__bloc">
+               <Host name={logementData.host.name} picture={logementData.host.picture}/>            
+               <Stars rating={logementData.rating}/>
+            </div>
+         </section>   
+
+            <div className="annonce__warpper">
+               <Accordion content={logementData.description} titre="Déscription"/>
+               <Accordion content={logementData.equipments} titre="Équipements"/>            
+            </div>
       </main>
    }
 }
