@@ -17,14 +17,7 @@ export default class Annonce extends Component{
       //si les données n'existent pas afficher la page d'erreur
       if(!logementData){
          return <Erreur />
-      }
-
-      
-      let lis = logementData.equipments.map((name) => {            
-         return  <li key={id}>{name}</li>
-       })
-
-       let templateEquipements = "<ul>"+lis+"</ul>"
+      }     
 
 
       return <main className="main annonce">
