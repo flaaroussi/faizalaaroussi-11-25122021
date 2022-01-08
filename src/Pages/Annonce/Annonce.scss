@@ -6,27 +6,30 @@
    &__blocs{
       @include flex (row, space-between, center);
       @include responsive(smartphone){
-         flex-direction: column;    
+         flex-direction: column;  
+         align-items: start;  
       }
 
       &__bloc{
+         width: 100%;
          .tags,
          .rating{
-            margin-top: 20px;  
-            
+            margin-top: 20px;              
          }
       }
       &__bloc:last-child{
-         @include flex (column, right, right);
+         width: 200px;
+         @include flex (column, space-between, end);
          @include responsive(smartphone){
-            @include flex (row, space-between, center);
-            flex-direction: row-reverse;
-         }
-         
-         aside{
             width: 100%;
-            text-align: right;
-         }
+            @include flex (row, space-between, center);
+            margin-top: 10px; 
+            flex-direction: row-reverse;
+            .rating{
+               margin-top: 0px;              
+            }
+         }        
+        
          
       }
    }
@@ -44,8 +47,15 @@
       .accordion{
          margin-right: 60px;
          width: 50%;
+
+         @include responsive(smartphone){
+            margin-right: 0px;
+            width: 100%;
+            margin-bottom: 20px;
+         }
+         
          &__body{     
-            min-height: 360px  !important;
+            min-height: 220px  !important;
          }
       }
    

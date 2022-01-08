@@ -9,7 +9,6 @@ export default class Annonces extends Component{
    render(){
       const api = new Api();
       const logementsData = api.getLogements();
-      console.log(logementsData[0])
 
       return <section className="annonces">
          {

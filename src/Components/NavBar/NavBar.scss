@@ -9,7 +9,7 @@
       margin-top: 40px;
       @include responsive(smartphone){
            
-         }
+      }
             
       &__log{
             width: 54px;
@@ -22,6 +22,11 @@
             &__link{
                   margin-left: 57px;
                   font-size: 24px;
+                  @include responsive(smartphone){
+                        font-size: 14px;
+                        margin-left: 30px;
+                        text-transform: uppercase;
+                  }
                   color :$color1;
                   &.active{
                         border-bottom:1px solid $color1;

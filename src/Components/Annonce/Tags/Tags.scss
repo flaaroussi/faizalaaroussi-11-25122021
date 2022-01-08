@@ -3,7 +3,15 @@
 
 .tags{
   
-   @include flex ('row', 0, 'center');
+   @include flex (row, 0, center);
    width: 100%;
+   @include responsive(smartphone){
+      flex-wrap: wrap;
+      .tag{
+         margin-bottom: 6px;
+      }
+      
+   }
+
 
 }

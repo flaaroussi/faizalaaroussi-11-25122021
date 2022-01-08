@@ -11,26 +11,9 @@
    gap :40px;
    @include responsive(smartphone){
       grid-template-columns: 1fr;
-      padding: 20px;
+      padding: 0px;
+      background-color: #FFFFFF;
+      gap :20px;
    }
       
-}
-
-//style card
-.logement{
-   border-radius: 10px;
-      &__img{
-         object-fit: cover;
-         height: 100%;
-         width: 100%;
-         border-radius: 10px;
-      }   
-      &__titre{
-         position: relative;
-         font-size: 18px;
-         font-weight: $font-medium;
-         color:$color-white;
-         margin-left: 20px;
-         top: -50px;
-      }
 }

@@ -7,10 +7,11 @@ export default class AnnonceCard extends Component{
 
       render(){
          const{id, titre, cover} = this.props
-         return <article  className="logement">
+         return <article  className="logement-card">
                <Link to={'/annonce/' + id}>
-                  <img className="logement__img" src={cover} alt="logement" />
-                  <h2 className="logement__titre">{titre}</h2>
+                  <div className="logement-card__overlay"></div>
+                  <img className="logement-card__img" src={cover} alt="logement" />
+                  <h2 className="logement-card__titre">{titre}</h2>
                </Link>
          </article>
       }
