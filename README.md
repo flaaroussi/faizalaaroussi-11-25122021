@@ -14,3 +14,5 @@
 - gti clone https://github.com/flaaroussi/FaizaLaaroussi_11_25122021.git
 - cd FaizaLaaroussi_11_25122021
 - yarn install or npm install
+# Lancer en local
+- yarn start or npm start
