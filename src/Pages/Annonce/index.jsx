@@ -1,8 +1,7 @@
 import { Component } from "react"
 import Api from '../../Api/Api.js'
-import Tags from "../../Components/Annonce/Tags/index.jsx";
+import Tag from "../../Components/Tag";
 import Host from "../../Components/Host/index.jsx";
-import AnnonceTitre from "../../Components/Annonce/Titre/index.jsx";
 import Caroussel from "../../Components/Caroussel";
 import Erreur from "../Erreur";
 import './Annonce.scss'
@@ -25,9 +24,20 @@ export default class Annonce extends Component{
 
          <section className="annonce__blocs">
             <div className="annonce__blocs__bloc">
-               <AnnonceTitre titre={logementData.title} adresse={logementData.location} />
-               <Tags tags={logementData.tags}/>
+               <section className="annonce__blocs__bloc__titre">
+                  <h1>{logementData.title}</h1>
+                  <h3>{logementData.location}</h3>
+               </section>   
+               
+               <div className="tags">
+                  {
+                     logementData.tags.map((tag, index) => { 
+                     return  <Tag key={`tag-${index}`} name={tag} />
+                     })
+                  }
+               </div>
             </div>
+
             <div className="annonce__blocs__bloc">
                <Host name={logementData.host.name} picture={logementData.host.picture}/>            
                <Stars rating={logementData.rating}/>

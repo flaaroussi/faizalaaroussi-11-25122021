@@ -3,11 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as NavbarLogo } from '../../assets/images/NavbarLogo.svg'
 import './Navbar.scss'
 
-
+//Creation du composant NavBar 
 export default class Navbar extends Component{
 
    render(){
-      return <header className="navbar">
+      return <header className="navbar">              
          <Link to="/">
             <NavbarLogo className="navbar__logo"  alt="logo Kasa" />
          </Link>

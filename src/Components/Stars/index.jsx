@@ -1,8 +1,10 @@
 import { Component } from "react";
+import propTypes from "prop-types";
 import { ReactComponent as Star }  from '../../assets/images/Star.svg'
 import './Stars.scss'
 
-
+//Création des 5 stars et changer leurs couleur selon
+//la valeur index-rating
 export default class Stars extends Component{
 
    render(){
@@ -15,7 +17,11 @@ export default class Stars extends Component{
                   return <Star key={index} className="rating__img" alt="StarImage" fill={color} />
                })
             }          
-        
-   </aside>
+      </aside>
    }
+}
+
+//Valider les types des proprs
+Stars.propType = {
+   rating: propTypes.number,
 }

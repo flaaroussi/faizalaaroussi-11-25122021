@@ -1,4 +1,5 @@
 import { Component } from "react";
+import propTypes from "prop-types";
 import './Tag.scss'
 
 export default class Tag extends Component{
@@ -8,4 +9,8 @@ export default class Tag extends Component{
          {name}
       </div>
    }
+}
+//Valider les types des proprs
+Tag.propType = {
+   name: propTypes.string,
 }
