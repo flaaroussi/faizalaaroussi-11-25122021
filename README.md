@@ -1,5 +1,5 @@
-# Projet N° 11  
- Réalisation d'un site web kasa en React
+# Projet N° 11    
+   Refonte du Front-end du site KASA, plateforme de location de logments entre les particulieres avec la téchnologie ReactJS  
 # Démo
 <a href="https://faiza-kasa.netlify.app/">https://faiza-kasa.netlify.app/</a>
 
@@ -27,9 +27,10 @@
 - React
 
 # Compatibilité:
-- Responsive
-- HTML
-- CSS
+* Le site est responsive.
+* Validation du code par W3C
+ - <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffaiza-kasa.netlify.app%2F">HTML</a>
+ - <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffaiza-kasa.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr">CSS</a>
 
 # Outils:
 - Visual Studio Code
