@@ -35,7 +35,7 @@
       }
       &__bloc:last-child{
          width: 200px;
-         @include flex (column, space-between, end);
+         @include flex (column, space-between, flex-end);
          @include responsive(smartphone){
             width: 100%;
             @include flex (row, space-between, center);
@@ -57,7 +57,6 @@
          @include flex (column, space-between, center);
         
       }
-
       .accordion{
          margin-right: 60px;
          width: 50%;
@@ -71,27 +70,23 @@
          &__body{     
             min-height: 220px  !important;
          }
-      }
-   
-
-
-   .accordion:last-child{
-      margin-right: 0;
-   }
-  
-   
-}
-}
-
-.tags{
-  
-   @include flex (row, 0, center);
-   width: 100%;
-   @include responsive(smartphone){
-      flex-wrap: wrap;
-      .tag{
-         margin-bottom: 6px;
+         &:last-child{
+            margin-right: 0;
+         }
       }      
    }
+
+   .tags{  
+      @include flex (row, 0, center);
+      width: 100%;
+      @include responsive(smartphone){
+         flex-wrap: wrap;
+         .tag{
+            margin-bottom: 6px;
+         }      
+      }
+   }
 }
+
+
 

@@ -6,10 +6,6 @@ import Accordion from "../../Components/Accordion/index.jsx";
 import '../../Components/Accordion/Accordion.scss'
 
 
-
-
-
-
 export default class Apropos extends Component{
    
 

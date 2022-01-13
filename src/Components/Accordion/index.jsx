@@ -11,8 +11,8 @@ export default class Accordion extends Component{
       // Super (proprs), nous permet d'utiliser les méthodes de React.Component
       super(props);
       this.state = {
-          // On stocke ici notre state  1 >> open, 0 >> close
-         IsOpenToggle: 1
+          // On stocke ici notre state 0 >> close,  1 >> open,  et par défaut c'est fermé  = 0
+         IsOpenToggle: 0 
       };
    }
    /**

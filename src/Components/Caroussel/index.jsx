@@ -61,11 +61,14 @@ export default class Caroussel extends Component{
 
       const {pictures} = this.props    
       return <section className="caroussel">
-
-            <div className="caroussel__navigation">
-               <ArrowRight alt="arrow" className="caroussel__chevron-g" onClick={(e) => this.prevSlide()}/>
-               <ArrowLeft alt="arrow" className="caroussel__chevron-d" onClick={(e) => this.nextSlide()}/>
-            </div>
+            {
+               //on affiche les boutons de navigation si le nbre des images est > 1
+               (this.getTotalPictures() > 1) &&  (<div className="caroussel__navigation">
+                  <ArrowRight alt="arrow" className="caroussel__chevron-g" onClick={(e) => this.prevSlide()}/>
+                  <ArrowLeft alt="arrow" className="caroussel__chevron-d" onClick={(e) => this.nextSlide()}/>
+               </div>)
+            }
+           
 
          {
             pictures.map((picture, index) => { 
