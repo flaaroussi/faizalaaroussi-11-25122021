@@ -1,5 +1,13 @@
 # Projet N° 11    
-   Refonte du Front-end du site KASA, plateforme de location de logments entre les particulieres avec la téchnologie ReactJS  
+   Refonte du Front-end du site KASA, plateforme de location de logements entre les particuliers avec la téchnologie ReactJS.# Projet N° 11    
+   
+# Problématique
+  Le site de Kasa, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour), a été 
+  codé il y a plus de 10 ans en ASP.NET avec un code legacy important.
+  
+# Besoin
+  Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end.
+   
 # Démo
 <a href="https://faiza-kasa.netlify.app/">https://faiza-kasa.netlify.app/</a>
 
