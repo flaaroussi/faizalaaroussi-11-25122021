@@ -1,5 +1,5 @@
 # Projet N° 11    
-   Refonte du Front-end du site KASA, plateforme de location de logements entre les particuliers avec la téchnologie ReactJS.# Projet N° 11    
+   Refonte du Front-end du site KASA, plateforme de location de logements entre les particuliers avec la téchnologie ReactJS.
    
 # Problématique
   Le site de Kasa, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour), a été 
